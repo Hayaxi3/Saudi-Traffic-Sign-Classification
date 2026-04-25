@@ -45,6 +45,15 @@ pip install -r requirements.txt
 - **Image size:** 224 × 224
 - **Seed:** 42
 
+## Output Files
+| File | Description |
+|:---|:---|
+| `{model}_best.pth` | Best checkpoint saved per model during training |
+| `model_comparison.csv` | Test-set metrics for all models |
+| `accuracy_curves.png` | Train vs. validation accuracy plots |
+| `confusion_matrices.png` | Per-model confusion matrix heatmaps |
+| `model_bar_comparison.png` | Grouped bar chart of all metrics |
+
 ## Gradio Demo
 After training and evaluation, Section 9 launches an interactive UI with four tabs:
 - **Single Model** — Upload an image, pick a model, and get top-K predictions with a confidence chart
