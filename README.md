@@ -7,6 +7,7 @@ A computer vision project that trains and compares **four vision transformer arc
 | Swin | `swin_base_patch4_window7_224` |
 | MobileViT | `mobilevit_s` |
 | EfficientViT | `efficientvit_b1` |
+
 All models are loaded with pretrained ImageNet weights via the `timm` library, with their classification heads replaced for 24-class output.
 
 ## Dataset
