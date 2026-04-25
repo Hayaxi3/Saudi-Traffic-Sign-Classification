@@ -16,6 +16,12 @@ All models are loaded with pretrained ImageNet weights via the `timm` library, w
 - **Splits:** Train / Validation / Test
 - **Preprocessing:** Auto-Orient, Resized to 224×224, normalized with ImageNet mean and std
 
+## Installation
+Requires Python 3.8+ and a GPU (recommended). Run in Google Colab or any Jupyter environment.
+```bash
+pip install -r requirements.txt
+```
+
 ## Notebook Sections
 | # | Section | Description |
 |:--|:--------|:------------|
@@ -23,7 +29,7 @@ All models are loaded with pretrained ImageNet weights via the `timm` library, w
 | 2 | Dataset | Download dataset from Roboflow |
 | 3 | Configuration & Reproducibility | Hyperparameters and random seeds |
 | 4 | Data Preprocessing & DataLoaders | Transforms, datasets, and DataLoaders |
-| 5 | Model Definitions | Build all five transformer models |
+| 5 | Model Definitions | Build all four transformer models |
 | 6 | Model Training | Training loop with early stopping and LR scheduling |
 | 7 | Model Evaluation | Test-set classification reports |
 | 8 | Model Visualization | Accuracy curves, confusion matrices, bar charts |
@@ -42,6 +48,6 @@ All models are loaded with pretrained ImageNet weights via the `timm` library, w
 ## Gradio Demo
 After training and evaluation, Section 9 launches an interactive UI with four tabs:
 - **Single Model** — Upload an image, pick a model, and get top-K predictions with a confidence chart
-- **Compare All Models** — Run all five models on the same image side by side
+- **Compare All Models** — Run all four models on the same image side by side
 - **Model Info** — Parameter counts and class label reference table
 - **Performance Results** — Test-set accuracy, precision, recall, and F1-score for all models
